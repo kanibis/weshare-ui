@@ -1,10 +1,14 @@
 import React, {useState} from 'react'
-import Calendar from 'react-calendar'
+// import Calendar from 'react-calendar'
 // import SearchBar from './SearchBar'
 // import bgImage from '../assets/sxnp3hcv7tyzrq15uobmdwi98aefkg24.jpeg'
 
 export default function TopBanner() {
+    // const [value, setValue] = useState(null);
+    // const [showCalendar, setShowCalendar] = useState(false)
 
+
+    
   return (
     <section className='top-banner-section'>
         {/* <div className='image-container'>
@@ -12,16 +16,16 @@ export default function TopBanner() {
         </div> */}
         <div className='top-banner-content-wrapper'>
             <div className='top-banner-content'>
-                <h1 className='top-banner-title'>Discover amazing experiences</h1>    
-                <div className='top-banner-search-bar'>
-                    <input type='search' placeholder='Search your destination'/>
-                    {/* <button onClick={handleSubmit}>Search</button> */}
-                    <button type="button" title="Search">Search</button>
-                </div>
-                <div className='date-picker-input'>
-                    <span style={{marginTop: "-3px"}}><i class="fa-solid fa-calendar-days"></i></span>
-                    <input type="text"/>
-                </div>    
+                <h1 className='top-banner-title'>Discover amazing experiences</h1>
+                <form>   
+                    <div className='top-banner-search-bar'>
+                        <input type='text' placeholder='Search your destination' />
+                    </div>
+                    <div className='date-picker-input'>
+                        <input type="date" id='select-date' />
+                        <button type="submit" title="Search">Search</button>
+                    </div>
+                </form>     
             </div>
         </div>
     </section>

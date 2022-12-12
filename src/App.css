@@ -95,46 +95,87 @@ ul.navigation-menu > li a {
   align-items: center;
   color: #63687a;
   font-size: 24px;
-  width: 80%;
+  width: 100%;
+  outline: none;
 }
 
-.top-banner-search-bar > button {
+
+.date-picker-input {
+  /* background: white; */
+  width: 600px;
+  height: 40px;
+  margin-top: 20px;
+  /* border: 2px solid #dcdfe4; */
+  border-radius: 40px;
+  padding: 8px 30px;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.date-picker-input > input {
+  background: white;
+  width: 75%;
+  height: 100%;
+  padding: 0 16px;
+  font-size: 16px;
+  /* background-color: transparent; */
+  align-items: center;
+  border: none;
+  border: 2px solid #dcdfe4;
+  border-radius: 24px;
+  outline: none;
+}
+
+.date-picker-input > button {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.375rem;
   padding: 9px 24px;
   border: none;
   border-radius: 40px;
-  width: 20%;
+  width: 25%;
   background-color: #3acbb5;
   color: white;
-}
-
-.top-banner-content .date-picker-input {
-  background: white;
-  width: 400px;
-  height: 40px;
-  margin-top: 20px;
-  border: 2px solid #dcdfe4;
-  border-radius: 40px;
-  padding: 8px 30px;
-  display: flex;
-  align-items: center;
-}
-
-.date-picker-input > input {
-  width: 100%;
-  height: 100%;
-  padding: 0 16px;
-  font-size: 16px;
-  background-color: transparent;
-  align-items: center;
-  border: none;
-  border-radius: 24px;
+  margin-left: 10px;
 }
 
 .hide {
   display: none;
+}
+
+.currency-selector option {
+  /* font-size: 24px; */
+  text-align: center;
+  width: 185px;
+}
+
+.currency-selector-container {
+  position: relative;
+}
+
+.currency-selector-dropdown {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 190px;
+  background-color: white;
+  box-shadow: 0 4px 8px #aaa;
+  max-height: 450px;
+  overflow: scroll;
+}
+
+.currency-dropdown-item {
+  display: block;
+  border: none;
+  background-color: unset;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 10px;
+  width: 100%;
 }
 
 
@@ -164,5 +205,10 @@ nav {
 }
 } */
 
-
-
+ /* start */
+/* #select-date::-webkit-datetime-edit-year-field,
+#select-date::-webkit-datetime-edit-month-field,
+#select-date::-webkit-datetime-edit-day-field{
+    color: transparent;
+} */
+/* end */

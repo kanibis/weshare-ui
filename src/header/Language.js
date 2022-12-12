@@ -10,7 +10,7 @@ export default function Language() {
   return (
     <>
     <div className='language-container'>
-        <select data-placeholder="Choose a Language" lang="en-AU">
+        <select data-placeholder="Choose a Language" lang="en-AU" style={{width: '160px', border: 'none', backgroundColor: 'unset'}}>
             <option value="en-US">English (United States)</option>
             <option value="af">Afrikaans</option>
             <option value="sq">Albanian - shqip</option>
