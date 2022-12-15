@@ -21,6 +21,8 @@
 .carousel-item-content {
     /* border: 1px solid rgb(222, 214, 214); */
     position: relative;
+    border-radius: 12px;
+    overflow: hidden;
 }
     
 .destination-image {
@@ -40,14 +42,13 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
 }
 
 .destination-image:hover {
     transform: scale(1.1);
 }
 
-.carousel-item-content h3 {
+.carousel-item-content .destination-city {
     font-size: 30px;
     padding-left: 10px;
     position: absolute; 

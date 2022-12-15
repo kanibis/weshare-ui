@@ -16,7 +16,7 @@ export default function TopDestinations() {
                                 <div className="image-overlay"></div>
                                 <img src={item.imgLink} alt={item.alt} />
                             </div>
-                            <h3>{item.city}</h3>
+                            <h3 className='destination-city'>{item.city}</h3>
                         </div>       
                     </div>              
             ))}
