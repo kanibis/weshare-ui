@@ -16,11 +16,18 @@
 
 .carousel-item-content {
     border: 1px solid rgb(222, 214, 214);
+    position: relative;
 }
     
 .carousel-item-content h3 {
     font-size: 24px;
-    padding-left: 10px;    
+    padding-left: 10px;
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);  
+    color: white; 
+    margin: 0 !important;
 }
     
 .carousel-item-content p {
@@ -34,6 +41,14 @@
 .destination-image {
     width: 100%;
     height: 200px;
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(62, 61, 61, 0.406);
 }
 
 .destination-image img {

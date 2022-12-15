@@ -13,11 +13,10 @@ export default function TopDestinations() {
                     <div key={item.id} className='image-carousel-item'>
                         <div className="carousel-item-content">
                             <div className='destination-image'>
+                                <div className="image-overlay"></div>
                                 <img src={item.imgLink} alt={item.alt} />
                             </div>
                             <h3>{item.city}</h3>
-                            <p>{item.city} is a wonderful destination.</p>
-                            <p style={{color: 'orange'}}>Price: $10,000</p>
                         </div>       
                     </div>              
             ))}
