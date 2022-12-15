@@ -53,16 +53,15 @@
   <script>
     
     $(document).ready(function() {
-      var item_length = $('.destination-image-carousel > div').length - 1;
-      $('.destination-image-carousel').slick({
+      var item_length = $('.destination-image-carousel > div, .top-place-image-carousel > div').length - 1;
+      $('.destination-image-carousel, .top-place-image-carousel').slick({
         infinite: false,
         slidesToShow: 4,
         slidesToScroll: 1,
         nextArrow: "<button class='slick-next slick-arrow'> <i class='fa-solid fa-chevron-right'></i></button>",
-        prevArrow: "<button class='slick-prev slick-arrow'> <i class='fa-solid fa-chevron-left'></i></button>",
-        
+        prevArrow: "<button class='slick-prev slick-arrow'> <i class='fa-solid fa-chevron-left'></i></button>"
       });
-      $('.destination-image-carousel').on('afterChange', function(event, slick, currentSlide) {
+      $('.destination-image-carousel, .top-place-image-carousel').on('afterChange', function(event, slick, currentSlide) {
         if (slick.currentSlide > 0) {
           $('.slick-prev').css('display', 'block');
         } else {
