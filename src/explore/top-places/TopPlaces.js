@@ -22,6 +22,9 @@ export default function TopPlaces() {
                     </div>              
             ))}
         </div>
+        <div className='listing-btn-container'>
+            <button className='listing-btn'>Explore more listings <span style={{marginLeft: '6px', fontSize: '20px', fontWeight: 'bold'}}>&#8594;</span></button>
+        </div>
     </div>
   )
 }
