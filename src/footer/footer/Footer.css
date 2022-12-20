@@ -1,0 +1,14 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #aaa;
+    margin: 0;
+}
+
+.join-us > p {
+    /* color: #3acbb5; */
+    font-weight: bold;
+    margin: 0;
+}
