@@ -16,6 +16,13 @@
 .global-presence-content {
     width: 300px;
     height: 200px;
+    color: #7A7A7A;
+}
+
+.country {
+    color:#3acbb5;
+    font-size: 24px;
+    margin: 0 auto;
 }
 
 .image {
@@ -28,12 +35,35 @@
     height: 100%;
 }
 
-.global-presence-address {
-    margin-top: 5px;
+.address {
+    margin: 0 auto;
+    /* width: 80%; */
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.4;
+}
+
+.address > p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.address p:last-child {
+    width: 85%;
+    margin: 0 auto;
 }
 
 .email {
-    color: #3acbb5;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.email > a {
+    text-decoration: none;
+    color: #3acbb5;
+    text-decoration-line:underline;
+}
+
+.phone > p {
+    margin: 0 auto;
 }

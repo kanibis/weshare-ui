@@ -8,12 +8,17 @@ function GlobalPresence() {
         <h2>Global Presence</h2>
         <div className='global-presence-content-container'>
             {globalPresenceData.map((item) =>
-                <div className='global-presence-content'> 
+                <div className='global-presence-content'>
                     <div className='image'>
                         <img src={item.imgLink} alt={item.alt} />
                     </div>
+                    <div className='country'>
+                        <h3>{item.country}</h3>
+                    </div> 
                     <div className='address'>
-                        <p>{item.address}</p>
+                        <p>{item.address1}</p>
+                        <p>{item.address2}</p>
+                        <p>{item.address3}</p>
                     </div>
                     <div className='email'>
                         <a href='#' >{item.email}</a>
