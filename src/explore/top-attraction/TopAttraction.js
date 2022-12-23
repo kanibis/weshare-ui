@@ -5,10 +5,9 @@ import {attractionCategories} from './top-attraction-categories'
 
 export default function TopAttraction() {
   return (
-    <>
+    <div className='top-attraction-container'>
         <h2 className='top-attraction-heading'>Top Attractions</h2>
-        
-        <div className='top-attraction-container'>
+        <div className='top-attraction-image-container'>
             {imageData.map((item, index) => (
                 <div className={'attraction-city' +index}>
                     <div className="image-overlay"></div>
@@ -38,7 +37,7 @@ export default function TopAttraction() {
                 </ul>
             </div>
         </div>
-    </>
+    </div>
   )
 }
 
