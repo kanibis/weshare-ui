@@ -2,7 +2,6 @@ import React from 'react'
 import './TopDestination.css'
 import {imageData} from './data.js' 
 
-
 export default function TopDestinations() {
     
   return (
