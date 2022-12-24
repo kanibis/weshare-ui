@@ -1,22 +1,30 @@
+.global-presence-container {
+    padding: 0 40px 40px;
+}
+
 .global-presence-container > h2 {
-    padding: 20px;
     font-size: 32px;
-    margin-top: 20px;
-    margin-bottom: 0;
 }
 
 .global-presence-content-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    align-items: flex-start;
     text-align: center;
 }
 
 .global-presence-content {
-    width: 300px;
+    width: 24%;
+}
+
+.global-presence-content .image {
+    width: 100%;
     height: 200px;
     color: #7A7A7A;
+}
+
+.global-presence-content h3 {
+    margin-bottom: 20px;
 }
 
 .country {
@@ -25,21 +33,17 @@
     margin: 0 auto;
 }
 
-.image {
-    width: 100%;
-    height: 100%;
-}
-
 .image > img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .address {
     margin: 0 auto;
     /* width: 80%; */
     text-align: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     line-height: 1.4;
 }
 

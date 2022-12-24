@@ -23,15 +23,12 @@ function GlobalPresence() {
                     <div className='email'>
                         <a href='#' >{item.email}</a>
                     </div>
-
                     <div className='phone'>
                         <p>{item.phone}</p>
                     </div>
                 </div>
-            )}
-            
+            )}    
         </div>
-
     </div>
   )
 }

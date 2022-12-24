@@ -1,12 +1,9 @@
 .top-attraction-container {
-    padding: 20px;
+    padding: 0 40px 20px;
 }
 
 .top-attraction-heading {
-    padding: 20px;
     font-size: 32px;
-    margin-top: 20px;
-    margin-bottom: 0;
 }
 
 .top-attraction-image-container {
@@ -16,9 +13,6 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 150px 150px;
     gap: 25px;
-    margin-top: 20px;
-    padding: 0 20px;
-    /* overflow: hidden;  */
 }
 
 /* .top-attraction-container > div {
@@ -106,7 +100,6 @@
 } */
 
 .top-attraction-category-container {
-    width: calc(100% - 40px);
     margin: 0 auto;
     margin-top: 40px;
 }

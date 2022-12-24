@@ -1,11 +1,12 @@
+.top-place-container {
+    padding: 0 40px 20px;
+}
+
 .top-place-container > h2 {
-    padding: 20px;
     font-size: 32px;
-    margin: 20px;
   }
   
 .top-place-image-carousel {
-    width: 94%;
     margin: 0 auto;
     position: relative;
 }
