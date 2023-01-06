@@ -29,6 +29,7 @@ ul.navigation-menu > li a {
   text-decoration: none;
   color: black;
   margin-right: 10px;
+  font-size: 14px;
 }
 
 .logo-image {
