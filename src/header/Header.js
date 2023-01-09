@@ -28,12 +28,12 @@ export default function header() {
                     <li className="menu-item"><Help/></li>
                     <li className="menu-item"><Supplier/></li>
                     <li className="menu-item">
-                    <Link to='/login' className='about'>
+                    <Link to='/login' className='login'>
                         Login
                     </Link>
                     </li>
                     <li className="menu-item">
-                    <Link to='/signup' className='about'>
+                    <Link to='/signup' className='signup'>
                         Signup
                     </Link>
                     </li>

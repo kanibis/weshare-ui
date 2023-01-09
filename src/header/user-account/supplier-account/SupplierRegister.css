@@ -1,8 +1,4 @@
-/* body {
-    background-color: aquamarine;
-} */
-
-.account-container {
+.signup-container {
     width: 400px;
     padding: 50px;
     position: absolute;
@@ -14,12 +10,12 @@
     border: 2px solid gray;
 }
 
-.login-title {
+.signup-title {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-.account-container input {
+.signup-container input {
     width: 100%;
     border: 1px solid #777;
     margin-bottom: 16px;
@@ -27,37 +23,39 @@
     box-sizing: border-box;
 }
 
-.login-btn-container {
+.signup-btn-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
+    
 }
 
-.forgot-password {
-    margin: 0px;
-}
 
-.login-btn-container button {
+.signup-btn-container button {
     padding: 10px 20px;
     background-color: #3acbb5;
     font-size: 18px;
     color: white;
     border: none;
     border-radius: 5px;
-}
-
-.not-registered {
-    display: flex;
-    justify-content: center;
-    margin: 25px 0;
-}
-
-.register-btn {
     width: 100%;
-    padding: 10px 20px;
-    background-color: #3acbb5;
-    font-size: 18px;
-    color: white;
-    border: none;
-    border-radius: 5px;
+}
+
+.terms-and-conditions-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.signup-container input.checkbox {
+    width: 20px;
+    margin: 0;
+    margin-right: 15px;
+}
+
+.terms-and-conditions {
+    color: #ababab;
+    font-size: 14px;
+    margin: 0;
 }

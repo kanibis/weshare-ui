@@ -11,6 +11,8 @@ import TopBanner from './top-banner/TopBanner';
 import Login from './header/user-account/Login';
 import SignUp from './header/user-account/SignUp';
 import Home from './Home';
+import SupplierRegister from './header/user-account/supplier-account/SupplierRegister'
+import SupplierLogin from './header/user-account/supplier-account/SupplierLogin'
 
 function App() {
   return (
@@ -21,13 +23,9 @@ function App() {
           <Route exact path="/" element={<Home/>}/>
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<SignUp/>} />
-          
-      
-          {/* <TopDestinations/>
-          <TopPlaces/>
-          <TopAttraction/>
-          <Footer/> */}
-      </Routes>
+          <Route path="/supplier-registration" element={<SupplierRegister/>} />
+          <Route path="/supplier-login" element={<SupplierLogin/>} />
+        </Routes>
         
         
        

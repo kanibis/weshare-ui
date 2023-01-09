@@ -1,5 +1,5 @@
 import React from 'react'
-import './Signup.css'
+import './SupplierRegister.css'
 
 export default function SignUp() {
   return (
@@ -15,6 +15,12 @@ export default function SignUp() {
           <div className='last-name-container'>
             {/* <label>Last Name: </label> */}
             <input type='text' placeholder='Last Name'/>
+          </div>
+          <div className='company-name'>
+            <input type='text' placeholder='Company Name'/>
+          </div>
+          <div className='services-provided'> 
+            <input type='text' placeholder='Services Provided'/>
           </div>
           <div className='email-container'>
             {/* <label>Email: </label> */}

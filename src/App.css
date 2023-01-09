@@ -2,6 +2,10 @@
   font-family: "Ubuntu", "sans-serif";
 }
 
+.App {
+  position: relative;
+}
+
 header {
   background-color: white;
 }

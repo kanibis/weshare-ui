@@ -1,11 +1,9 @@
 import React from 'react'
-import './Login.css'
+import './SupplierLogin.css'
 
 export default function Login() {
   return (
-    <div className='account-container'>
-        {/* <a href="#" className="login-button" style={{fontSize: '14px'}}>Login</a> */}
-        
+    <div className='account-container'>        
         <div className='login-title'>Login</div>
         <form className='login-form'>
           <div className='email-container'>

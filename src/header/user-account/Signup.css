@@ -1,7 +1,7 @@
 .signup-container {
     width: 400px;
     padding: 50px;
-    position: fixed;
+    position: absolute;
     top: 100px;
     left: 50%;
     transform: translate(-50%, 0);
@@ -43,9 +43,19 @@
 
 .terms-and-conditions-container {
     margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.signup-container input.checkbox {
+    width: 20px;
+    margin: 0;
+    margin-right: 15px;
 }
 
 .terms-and-conditions {
     color: #ababab;
     font-size: 14px;
+    margin: 0;
 }
