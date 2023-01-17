@@ -2,6 +2,10 @@
   font-family: "Ubuntu", "sans-serif";
 }
 
+.App {
+  position: relative;
+}
+
 header {
   background-color: white;
 }
@@ -29,6 +33,7 @@ ul.navigation-menu > li a {
   text-decoration: none;
   color: black;
   margin-right: 10px;
+  font-size: 14px;
 }
 
 .logo-image {
