@@ -13,6 +13,7 @@ import SignUp from './header/user-account/SignUp';
 import Home from './Home';
 import SupplierRegister from './header/user-account/supplier-account/SupplierRegister'
 import SupplierLogin from './header/user-account/supplier-account/SupplierLogin'
+import Help from './header/Help';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/" element={<Home/>}/>
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<SignUp/>} />
+          <Route path="/help" element={<Help/>} />
           <Route path="/supplier-registration" element={<SupplierRegister/>} />
           <Route path="/supplier-login" element={<SupplierLogin/>} />
         </Routes>

@@ -6,6 +6,7 @@
   position: relative;
 }
 
+
 header {
   background-color: white;
 }
@@ -159,6 +160,7 @@ ul.navigation-menu > li a {
 
 .currency-selector-container {
   position: relative;
+  z-index: 999;
 }
 
 .currency-selector-dropdown {

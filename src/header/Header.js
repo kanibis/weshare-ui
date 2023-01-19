@@ -25,17 +25,21 @@ export default function header() {
                 
                     <li className="menu-item"><Language/></li>
                     <li className="menu-item"><CurrencySelector/></li>
-                    <li className="menu-item"><Help/></li>
+                    <li className="menu-item">
+                        <Link to='/help' className='help'>
+                            Help
+                        </Link>
+                    </li>
                     <li className="menu-item"><Supplier/></li>
                     <li className="menu-item">
-                    <Link to='/login' className='login'>
-                        Login
-                    </Link>
+                        <Link to='/login' className='login'>
+                            Login
+                        </Link>
                     </li>
                     <li className="menu-item">
-                    <Link to='/signup' className='signup'>
-                        Signup
-                    </Link>
+                        <Link to='/signup' className='signup'>
+                            Signup
+                        </Link>
                     </li>
                 </ul>
             </div>

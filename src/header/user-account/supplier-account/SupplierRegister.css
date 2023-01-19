@@ -1,11 +1,15 @@
 .signup-container {
-    width: 400px;
-    padding: 50px;
     position: absolute;
     top: 100px;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: white;
+    padding-bottom: 20px;
+}
+
+.signup-content {
+    width: 400px;
+    padding: 50px;
     border-radius: 20px;
     border: 2px solid gray;
 }
@@ -26,12 +30,10 @@
 .signup-btn-container {
     display: flex;
     /* justify-content: center;
-    align-items: center; */
-    
+    align-items: center; */   
 }
 
-
-.signup-btn-container button {
+.register-btn {
     padding: 10px 20px;
     background-color: #3acbb5;
     font-size: 18px;
@@ -39,6 +41,7 @@
     border: none;
     border-radius: 5px;
     width: 100%;
+    margin-top: 20px;
 }
 
 .terms-and-conditions-container {

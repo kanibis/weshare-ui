@@ -1,20 +1,36 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Login.css'
 
 export default function Login() {
+    
+  const [details, setDetails] = useState({
+    email: "",
+    password: ""
+  })
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
+
+  const handleChange = (e) => {
+    const {name, value} = e.target
+    setDetails({...details, [name]:value})
+    console.log(details)
+  }
+
   return (
     <div className='account-container'>
-        {/* <a href="#" className="login-button" style={{fontSize: '14px'}}>Login</a> */}
-        
+               
         <div className='login-title'>Login</div>
-        <form className='login-form'>
+
+        <form className='login-form' onSubmit={handleSubmit}>
           <div className='email-container'>
             {/* <label for='login-email'>Email</label> */}
-            <input type='email' placeholder='Email Address' id='login-email'/>
+            <input type='email' name='email' placeholder='Email Address' id='login-email' value={details.email} onChange={handleChange}/>
           </div>
           <div className='password-container'>
             {/* <label for='login-password'>Password</label> */}
-            <input type='email' placeholder='Password' id='login-password'/>
+            <input type='password' name='password' placeholder='Password' id='login-password' value={details.password} onChange={handleChange}/>
           </div>
           <div className='login-btn-container'>
             <p className='forgot-password'>Forgot Password?</p>
@@ -27,8 +43,7 @@ export default function Login() {
             <button className='register-btn'>
               Register
             </button>
-          </div>
-          
+          </div> 
         </form>
     </div>
   )
