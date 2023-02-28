@@ -44,6 +44,7 @@
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .not-registered {
@@ -60,4 +61,5 @@
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }

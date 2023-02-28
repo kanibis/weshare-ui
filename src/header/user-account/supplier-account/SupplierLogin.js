@@ -42,7 +42,7 @@ export default function Login() {
             
             <Link to='/signup' className='signup'>
               <button className='register-btn'>
-                  Register
+                  Register Now
               </button>
             </Link>
             

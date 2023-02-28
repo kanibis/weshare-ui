@@ -19,9 +19,18 @@ export default function SignUp() {
     name: "fullname",
     type: "text",
     placeholder: "Full Name",
-    errorMessage: "Name should be 4-16 characters and shouldn't include any special characters",
+    errorMessage: "Name should be 3-30 characters and shouldn't include any special characters",
     label: "Full Name",
-    pattern: "^[A-Za-z0-9]{4,16}$",
+    pattern: "^[A-Za-z0-9](?=.*[ ]){3,30}$",
+    required: true,
+  },
+  {
+    id: 4,
+    name: "email",
+    type: "email",
+    placeholder: "Business Email",
+    errorMessage: "Please enter a valid email!",
+    label: "Email",
     required: true,
   },
   {
@@ -35,6 +44,16 @@ export default function SignUp() {
     required: true,
   },
   {
+    id: 7,
+    name: "company-address",
+    type: "text",
+    placeholder: "Company Address",
+    errorMessage: "Name should be 1-200 characters",
+    label: "Company Name",
+    pattern: "^[A-Za-z0-9](?=.*[,!@#$%^&* ]){1,200}$",
+    required: true,
+  },
+  {
     id: 3,
     name: "servicesprovided",
     type: "text",
@@ -45,15 +64,7 @@ export default function SignUp() {
     // multiple: true,
     required: true,
   },
-  {
-    id: 4,
-    name: "email",
-    type: "email",
-    placeholder: "Email",
-    errorMessage: "Please enter a valid email!",
-    label: "Email",
-    required: true,
-  },
+  
   {
     id: 5,
     name: "password",
@@ -88,7 +99,7 @@ export default function SignUp() {
     <div className="signup-container">
       <div className='signup-content'>
         <form onSubmit={handleSubmit}>
-          <div className='signup-title'>Signup</div>
+          <div className='signup-title'>Supplier Registration</div>
           {inputs.map((input) => (
             <FormInput key={input.id} {...input} value={values[input.name]} onChange={onChange}/>
           ))}
@@ -98,7 +109,7 @@ export default function SignUp() {
             I have read and I understand and accept the WeShare Terms of Use, and WeShare Privacy Policy and Cookie Policy, and here by agree and grant my consent to certain of my information being shared with online exhibitors when I perform any Relevant Interaction and being used, in accordance with the provisions thereof.
             </p>
           </div>
-          <button className='register-btn'>Submit</button>
+          <button className='submit-btn'>Submit</button>
         </form>
       </div>
       

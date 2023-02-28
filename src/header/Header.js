@@ -1,7 +1,7 @@
 import React from 'react'
 // import Currency from './Currency'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import {Link} from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import CurrencySelector from './CurrencySelector'
 import Help from './Help'
 import Language from './Language'
@@ -11,8 +11,16 @@ import Login from './user-account/Login'
 import SignUp from './user-account/SignUp'
 
 export default function header() {
+    const auth = localStorage.getItem('user')
+
+    const logout = () => {
+        // console.log("logout")
+        localStorage.clear()
+    }
+
+    // const navigate = useNavigate();
+
   return (
-    
     <header>
         <nav className="header-container">
             <div className="header-logo-container">
@@ -31,19 +39,41 @@ export default function header() {
                         </Link>
                     </li>
                     <li className="menu-item"><Supplier/></li>
+
+                    {
+                    auth ? <li><Link onClick={logout} to='/signup' className='signup'>Logout</Link></li> :
+                    <>
+                        <li><Link to='/signup' className='signup'>Signup</Link></li>
+                        <li><Link to='/login' className='login'>Login</Link></li>
+                    </>
+                    }
+
                     <li className="menu-item">
-                        <Link to='/login' className='login'>
-                            Login
+                        <Link to='/submission' className='listing'>
+                            Add Listing
                         </Link>
                     </li>
-                    <li className="menu-item">
-                        <Link to='/signup' className='signup'>
-                            Signup
-                        </Link>
-                    </li>
+                    
                 </ul>
             </div>
         </nav>
     </header>
   )
 }
+
+
+
+
+{/* <li className="menu-item">
+                        <Link to='/login' className='login'>
+                            Login
+                        </Link>
+                    </li> */}
+{/* <li className="menu-item">
+    <Link to='/signup' className='signup'>
+        Signup
+    </Link>
+</li> */}
+                    
+{/* <li className="menu-item"> {auth ? <Link onClick={logout} to='/signup' className='signup'>Logout</Link> :
+<Link to='/signup' className='signup'>Signup</Link> }</li> */}

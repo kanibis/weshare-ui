@@ -25,7 +25,7 @@
 }
 
 .signup-container input {
-    width: 100%;
+    width: 400px;
     border: 1px solid #777;
     margin-bottom: 16px;
     padding: 10px;
@@ -47,6 +47,19 @@
     border: none;
     border-radius: 5px;
     width: 100%;
+    cursor: pointer;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #3acbb5;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 .terms-and-conditions-container {

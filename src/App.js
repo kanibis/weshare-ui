@@ -14,23 +14,31 @@ import Home from './Home';
 import SupplierRegister from './header/user-account/supplier-account/SupplierRegister'
 import SupplierLogin from './header/user-account/supplier-account/SupplierLogin'
 import Help from './header/Help';
+// import ListingSidebar from './header/add-listing/ListingSidebar'
+import General from './header/add-listing/General'
+import Gallery from './header/add-listing/Gallery'
+import Submission from './header/add-listing/Submission';
+import PrivateComponent from './header/user-account/PrivateComponent';
+import AboutTheListing from './header/add-listing/AboutTheListing';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Header/>
+        <Header />
         <Routes>
+          {/* <Route element={<PrivateComponent />}> */}
           <Route exact path="/" element={<Home/>}/>
-          <Route path="/login" element={<Login/>} />
-          <Route path="/signup" element={<SignUp/>} />
           <Route path="/help" element={<Help/>} />
+          <Route path="/login" element={<Login/>} />
+          {/* </Route> */}
+          <Route path="/signup" element={<SignUp/>} />
+          <Route path="/logout" element={<h1>Logout</h1>} />
+          
           <Route path="/supplier-registration" element={<SupplierRegister/>} />
           <Route path="/supplier-login" element={<SupplierLogin/>} />
+          <Route path="/submission" element={<Submission/>} />
         </Routes>
-        
-        
-       
       </div>  
     </Router>  
   );

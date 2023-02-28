@@ -26,27 +26,27 @@ export default function Help() {
             <h2 className='common-FAQs-content-title'>Explore common FAQs</h2>
             <div className='common-FAQs-content-list'>
               <div className='FAQ'>
-                <div className='1'>When will I receive my booking confirmation?</div>
+                <div className='ques'>When will I receive my booking confirmation?</div>
                 <div><i className="fa-solid fa-chevron-down"></i></div>
               </div>
               <div className='FAQ'>
-                <div className='2'>Can I book an activity on behalf of someone else?</div>
+                <div className='ques'>Can I book an activity on behalf of someone else?</div>
                 <div><i className="fa-solid fa-chevron-down"></i></div>
               </div>
               <div className='FAQ'>
-                <div className='3'>How can I cancel/refund my booking?</div>
+                <div className='ques'>How can I cancel/refund my booking?</div>
                 <div><i className="fa-solid fa-chevron-down"></i></div>
               </div>
               <div className='FAQ'>
-                <div className='4'>I can't log into my WeShare account. What can I do?</div>
+                <div className='ques'>I can't log into my WeShare account. What can I do?</div>
                 <div><i className="fa-solid fa-chevron-down"></i></div>
               </div>
               <div className='FAQ'>
-                <div className='5'>How to plan your trip?</div>
+                <div className='ques'>How to plan your trip?</div>
                 <div><i className="fa-solid fa-chevron-down"></i></div>
               </div>
               <div className='FAQ'>
-                <div className='6'>My activity offers pickup. How can I schedule a pickup?</div>
+                <div className='ques'>My activity offers pickup. How can I schedule a pickup?</div>
                 <div><i className="fa-solid fa-chevron-down"></i></div>
               </div>
             </div>
