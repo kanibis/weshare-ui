@@ -23,7 +23,7 @@ export default function Login() {
     console.log(details);
     let email = details.email;
     let password = details.password;
-    let result = await fetch("http://localhost:5000/login", {
+    let result = await fetch("https://weshare-backend-d3ze.onrender.com/login", {
       method: "post",
       body: JSON.stringify({ email, password }),
       headers: {

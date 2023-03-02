@@ -76,7 +76,7 @@ export default function SignUp() {
     let email = values.email
     let password = values.password
     console.log(values.fullname, values.email, values.password)
-    let result = await fetch('http://localhost:5000/register', {
+    let result = await fetch('https://weshare-backend-d3ze.onrender.com/register', {
       method: 'post',
       body: JSON.stringify({name, email, password}),
       headers: {
