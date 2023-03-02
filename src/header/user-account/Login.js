@@ -4,12 +4,16 @@ import { Link, useNavigate } from "react-router-dom";
 import SignUp from "./SignUp";
 
 export default function Login() {
+
   const navigate = useNavigate();
 
   const [details, setDetails] = useState({
     email: "",
     password: "",
   });
+
+  // const [isLoggedIn, setIsLoggedIn] = useState(false)
+
 
   useEffect(() => {
     const auth = localStorage.getItem("user");
@@ -23,7 +27,7 @@ export default function Login() {
     console.log(details);
     let email = details.email;
     let password = details.password;
-    let result = await fetch("https:/localhost:5000/login", {
+    let result = await fetch("http://localhost:5000/login", {
       method: "post",
       body: JSON.stringify({ email, password }),
       headers: {
@@ -31,19 +35,26 @@ export default function Login() {
       },
     });
     result = await result.json();
-    console.log(result);
-    // if (result.name) {
-    //   localStorage.setItem("user", JSON.stringify(result))
-    //   navigate('/')
-    // } else {
-    //   alert("Please enter correct details!")
+    // if (result) {
+    //   setDetails({isLoggedIn: true})
+    //   console.log(isLoggedIn)
+    
     // }
+    console.log(result);
+    if (result.name) {
+      localStorage.setItem("user", JSON.stringify(result))
+      // setIsLoggedIn(true)
+      // console.log(isLoggedIn)
+      navigate('/')
+      
+    } else {
+      alert("Please enter correct details!")
+    }
   };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setDetails({ ...details, [name]: value });
-    console.log(details);
   };
 
   return (

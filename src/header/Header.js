@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 // import Currency from './Currency'
 // import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import {Link, useNavigate} from 'react-router-dom';
@@ -10,7 +10,9 @@ import Supplier from './Supplier'
 import Login from './user-account/Login'
 import SignUp from './user-account/SignUp'
 
-export default function header() {
+export default function Header() {
+    // const [userAccount, setUserAccount] = useState(true)
+
     const auth = localStorage.getItem('user')
 
     const logout = () => {
