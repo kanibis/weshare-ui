@@ -22,7 +22,8 @@ export default function SignUp() {
       placeholder: "Full Name",
       errorMessage: "Name should be 4-16 characters and shouldn't include any special characters",
       label: "Username",
-      pattern: "^[A-Za-z0-9]{4,16}$",
+      // pattern: "^[A-Za-z0-9]{4,16}$",
+      pattern: "^[A-Za-z][A-Za-z,.'-]+ +[A-Za-z][A-Za-z,.'-]+$",
       required: true,
   },
   {
@@ -76,7 +77,7 @@ export default function SignUp() {
     let email = values.email
     let password = values.password
     console.log(values.fullname, values.email, values.password)
-    let result = await fetch('https://weshare-backend-d3ze.onrender.com/register', {
+    let result = await fetch('https://localhost:5000/register', {
       method: 'post',
       body: JSON.stringify({name, email, password}),
       headers: {
